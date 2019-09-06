@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from .router import router
+
 
 app = FastAPI(
     title="Some weird ass server I don't need",
@@ -35,3 +37,5 @@ main: the file main.py (the Python "module").
 app: the object created inside of main.py with the line app = FastAPI().
 --reload: make the server restart after code changes. Only do this for development.
 """
+
+app.include_router(router, prefix="/v1")
