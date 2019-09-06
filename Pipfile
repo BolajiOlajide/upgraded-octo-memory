@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 monkeytype = "*"
 fastapi = "*"
+email-validator = "*"
+uvicorn = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"
