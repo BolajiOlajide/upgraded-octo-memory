@@ -12,3 +12,8 @@ is also a cool thing
 
 ## Check out FastAPI
 Alternative to your flask travails lol
+
+Comparison
+----------
+
+For the index request, `flask` takes 6ms while `FastAPI` takes 4ms.
